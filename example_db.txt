@@ -1,0 +1,24 @@
+CREATE TABLE users(
+    id varchar(255) NOT NULL,
+    firstname varchar(255) NOT NULL,
+    lastname varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    createdAt datetime NOT NULL,
+    updatedAt datetime NOT NULL,
+    deletedAt datetime DEFAULT NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE posts(
+    id varchar(255) NOT NULL,
+    title varchar(255) NOT NULL,
+    text varchar(255) NOT NULL,
+    fk_users varchar(255) NOT NULL,
+    createdAt datetime NOT NULL,
+    updatedAt datetime NOT NULL,
+    deletedAt datetime DEFAULT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (fk_users) REFERENCES users(id)
+);

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.btnSubmit {
+  background-color: #1369cf;
+  color: white;
+  border: 1px solid #0b4999;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top:10px;
+}
+
+.btnSubmit:hover {
+  background-color: #0b4996;
+}
+
+.Input {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+}
+
+.txtSignUp {
+  display: block;
+  width:100px;
+  margin-top: 10px;
+}
+
+.errInput{
+  border: 1px solid;
+  width: 200px;
+  padding: 10px;
+  border-color: red;
+  background-color: pink;
+  margin:auto;
+  overflow:hidden;
+}
